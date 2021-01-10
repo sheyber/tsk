@@ -2,16 +2,16 @@
 include "./builtin.tsk";
 
 fn to_word(val) {
-  v = val % 10;
-  if (v == 1) { return "рубль"; }
-  else if (v == 2) { return "рубля"; }
-  else { return "рублей"; }
+    v = val % 10;
+    if (v == 1) { return "рубль"; }
+    else if (v == 2) { return "рубля"; }
+    else { return "рублей"; }
 }
 
 i = 9; 
 while (i < 50) {
-  console.log(i, to_word(i));
-  i += 3;
+    console.log(i, to_word(i));
+    i += 3;
 }
 
 console.log("====================================");
